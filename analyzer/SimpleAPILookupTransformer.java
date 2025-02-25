@@ -32,7 +32,7 @@ public class SimpleAPILookupTransformer extends BodyTransformer{
 		//Iterate all statements and record any API invocation statement.
 		while(iter.hasNext()){
 			
-			Stmt s = (Stmt)iter.next();
+			Stmt stmt = (Stmt)iter.next();
 
 			if (stmt.containsInvokeExpr()) {
 				InvokeExpr invokeExpr = stmt.getInvokeExpr(); 
